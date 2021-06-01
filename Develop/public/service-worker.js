@@ -1,9 +1,11 @@
 const FILES_TO_CACHE = [
     '/',
-    '/index.html',
+    '/index.js',
     '/manifest.json',
     '/style.css',
-    'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
+    '/indexedDB.js',
+    '/icons/icon-192x192.png',
+    '/icons/icon-512x512.png',
   ];
   
   const PRECACHE = 'precache-v1';
