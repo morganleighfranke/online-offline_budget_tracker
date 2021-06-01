@@ -1,6 +1,14 @@
+const indexedDB = 
+window.indexedDB ||
+window.mozIndexedDB ||
+window.webkitIndexedDB ||
+window.msIndexedDB ||
+window.shimIndexedDB;
+
+
 let db;
 //creates new database request for the budget database
-const request = window.indexedDB.open("budget", 3);
+const request = window.indexedDB.open("budget", 1);
 
 request.onupgradeneeded = ({ event }) => {
   db = event.consoletarget.result;
@@ -30,7 +38,7 @@ function saveRecord(event) {
 }
 
 function checkDB() {
-    let transaction = db.transaction(["budgetStore"], "readwrite");
+    let transaction = db.transaction(["bugetStore"], "readwrite");
     const store = transaction.objectStore("budgetStore");
     const getAll = store.getAll();
 
