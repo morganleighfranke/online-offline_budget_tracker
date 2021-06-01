@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "lite-server": "lite-server",
-    "build": "cd public && npm run build"
+    "build": "cd public && npm run build",
+    "install": "cd public && npm install",
+    "client": "cd public && npm start"
   },
   "repository": {
     "type": "git",
