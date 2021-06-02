@@ -26,6 +26,6 @@ Giving users a fast and easy way to track their money is important, but allowing
 
 This screenshot shows Lighthouse confirming that this app is a Progressive Web Application.
 
-![Alt text](/public/assets/PWS.png?raw=true "Lighthouse")
+![Alt text](/public/assets/PWA.png?raw=true "Lighthouse")
 
 
