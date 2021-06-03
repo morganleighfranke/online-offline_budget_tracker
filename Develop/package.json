@@ -4,13 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "npm run build && node server.js",
-    "start:dev": "concurrently \"npm run server\" \"cd client && npm run start\"",
-    "server": "nodemon server.js --ignore client",
-    "build": "cd && npm run build",
-    "install": "cd public && npm install",
-    "client": "cd public && npm start"
+    "test": "echo \"Error: no test specified\" && exit 1",    
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
